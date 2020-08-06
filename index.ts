@@ -8,7 +8,7 @@ type rpTypes = {
   xl?: any;
 };
 
-export const useRp = ({ xs, sm, md, lg, xl }: rpTypes) => {
+export default ({ xs, sm, md, lg, xl }: rpTypes) => {
   const theme = useTheme();
   const isXlUp = useMediaQuery(theme.breakpoints.up("xl"));
   const isLgUp = useMediaQuery(theme.breakpoints.up("lg"));

@@ -1,0 +1,23 @@
+{
+  "name": "react-responsive-value",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/clann-inc/react-responsive-value.git"
+  },
+  "author": "clann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clann-inc/react-responsive-value/issues"
+  },
+  "homepage": "https://github.com/clann-inc/react-responsive-value#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "react": "^16.13.1"
+  }
+}

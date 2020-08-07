@@ -1,11 +1,14 @@
-import { useMediaQuery, useTheme } from "@material-ui/core";
-export default ({ xs, sm, md, lg, xl }) => {
-    const theme = useTheme();
-    const isXlUp = useMediaQuery(theme.breakpoints.up("xl"));
-    const isLgUp = useMediaQuery(theme.breakpoints.up("lg"));
-    const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
-    const isSmUp = useMediaQuery(theme.breakpoints.up("sm"));
-    const isXsUp = useMediaQuery(theme.breakpoints.up("xs"));
+"use strict";
+exports.__esModule = true;
+var core_1 = require("@material-ui/core");
+exports["default"] = (function (_a) {
+    var xs = _a.xs, sm = _a.sm, md = _a.md, lg = _a.lg, xl = _a.xl;
+    var theme = core_1.useTheme();
+    var isXlUp = core_1.useMediaQuery(theme.breakpoints.up("xl"));
+    var isLgUp = core_1.useMediaQuery(theme.breakpoints.up("lg"));
+    var isMdUp = core_1.useMediaQuery(theme.breakpoints.up("md"));
+    var isSmUp = core_1.useMediaQuery(theme.breakpoints.up("sm"));
+    var isXsUp = core_1.useMediaQuery(theme.breakpoints.up("xs"));
     switch (true) {
         case isXlUp && !!xl:
             return xl;
@@ -19,4 +22,4 @@ export default ({ xs, sm, md, lg, xl }) => {
             return xs;
     }
     return null;
-};
+});

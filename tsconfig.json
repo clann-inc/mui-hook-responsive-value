@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
     "strict": true,
     "skipLibCheck": true,
     "declaration": true,
     "pretty": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "newLine": "lf",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "outDir": "dist"
   }
 }

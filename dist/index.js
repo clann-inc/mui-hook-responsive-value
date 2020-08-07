@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@material-ui/core");
-exports.default = ({ xs, sm, md, lg, xl }) => {
-    const theme = core_1.useTheme();
-    const isXlUp = core_1.useMediaQuery(theme.breakpoints.up("xl"));
-    const isLgUp = core_1.useMediaQuery(theme.breakpoints.up("lg"));
-    const isMdUp = core_1.useMediaQuery(theme.breakpoints.up("md"));
-    const isSmUp = core_1.useMediaQuery(theme.breakpoints.up("sm"));
-    const isXsUp = core_1.useMediaQuery(theme.breakpoints.up("xs"));
+import { useMediaQuery, useTheme } from "@material-ui/core";
+export default ({ xs, sm, md, lg, xl }) => {
+    const theme = useTheme();
+    const isXlUp = useMediaQuery(theme.breakpoints.up("xl"));
+    const isLgUp = useMediaQuery(theme.breakpoints.up("lg"));
+    const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
+    const isSmUp = useMediaQuery(theme.breakpoints.up("sm"));
+    const isXsUp = useMediaQuery(theme.breakpoints.up("xs"));
     switch (true) {
         case isXlUp && !!xl:
             return xl;

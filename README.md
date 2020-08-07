@@ -1,1 +1,1 @@
-# react-responsive-value
+# mui hook responsive value
